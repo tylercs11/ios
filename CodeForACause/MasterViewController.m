@@ -27,9 +27,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    self.navigationItem.leftBarButtonItem.tintColor = [UIColor whiteColor];
+    
+    if(floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        // iOS 6.1 or eralier
+        self.navigationController.navigationBar.tintColor = [self navColor];
+        [self.navigationController.navigationBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    } else {
+        // iOS 7.0 or later
+        self.navigationController.navigationBar.barTintColor = [self navColor];
+        self.navigationController.navigationBar.translucent = NO;
+        [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName, nil]];
+    }
+    
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
@@ -213,5 +226,10 @@
     [self.tableView reloadData];
 }
  */
+
+- (UIColor*)navColor
+{
+    return[UIColor colorWithRed: 0 green: 0.584 blue:0.529 alpha: 1];
+}
 
 @end
