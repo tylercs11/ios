@@ -10,4 +10,10 @@
 
 @interface RideTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UITextField *rideDate;
+@property (weak, nonatomic) IBOutlet UITextField *rideLocation;
+@property (weak, nonatomic) IBOutlet UITextField *rideDistance;
+@property (weak, nonatomic) IBOutlet UITextField *ridePace;
+
+
 @end

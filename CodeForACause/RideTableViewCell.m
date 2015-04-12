@@ -10,6 +10,11 @@
 
 @implementation RideTableViewCell
 
+@synthesize rideDate = _rideDate;
+@synthesize rideLocation = _rideLocation;
+@synthesize rideDistance = _rideDistance;
+@synthesize ridePace = _ridePace;
+
 - (void)awakeFromNib {
     // Initialization code
 }
