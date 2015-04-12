@@ -16,6 +16,9 @@
 		2FD13CB21ADAEFA5002E3C54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD13CB11ADAEFA5002E3C54 /* Images.xcassets */; };
 		2FD13CB51ADAEFA5002E3C54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD13CB31ADAEFA5002E3C54 /* LaunchScreen.xib */; };
 		2FD13CC11ADAEFA5002E3C54 /* CodeForACauseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD13CC01ADAEFA5002E3C54 /* CodeForACauseTests.m */; };
+		2FD13CD11ADB031B002E3C54 /* RideCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD13CD01ADB031B002E3C54 /* RideCellNib.xib */; };
+		2FD13CD41ADB03BB002E3C54 /* RideTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD13CD31ADB03BB002E3C54 /* RideTableViewCell.m */; };
+		2FD13CD71ADB1D5A002E3C54 /* RideDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD13CD61ADB1D5A002E3C54 /* RideDetailViewController.m */; };
 		9D488F1CEB968FD98FDA4D16 /* Pods_CodeForACause.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0992CFD40DBB88636BFED6D /* Pods_CodeForACause.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,11 @@
 		2FD13CBA1ADAEFA5002E3C54 /* CodeForACauseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeForACauseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD13CBF1ADAEFA5002E3C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD13CC01ADAEFA5002E3C54 /* CodeForACauseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeForACauseTests.m; sourceTree = "<group>"; };
+		2FD13CD01ADB031B002E3C54 /* RideCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideCellNib.xib; sourceTree = "<group>"; };
+		2FD13CD21ADB03BB002E3C54 /* RideTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideTableViewCell.h; sourceTree = "<group>"; };
+		2FD13CD31ADB03BB002E3C54 /* RideTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideTableViewCell.m; sourceTree = "<group>"; };
+		2FD13CD51ADB1D5A002E3C54 /* RideDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideDetailViewController.h; sourceTree = "<group>"; };
+		2FD13CD61ADB1D5A002E3C54 /* RideDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideDetailViewController.m; sourceTree = "<group>"; };
 		A0992CFD40DBB88636BFED6D /* Pods_CodeForACause.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeForACause.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC881E27A34E3F6F62A07CCA /* Pods-CodeForACause.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeForACause.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeForACause/Pods-CodeForACause.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +112,11 @@
 				2FD13CB31ADAEFA5002E3C54 /* LaunchScreen.xib */,
 				2FD13CA51ADAEFA5002E3C54 /* CodeForACause.xcdatamodeld */,
 				2FD13C9E1ADAEFA5002E3C54 /* Supporting Files */,
+				2FD13CD01ADB031B002E3C54 /* RideCellNib.xib */,
+				2FD13CD21ADB03BB002E3C54 /* RideTableViewCell.h */,
+				2FD13CD31ADB03BB002E3C54 /* RideTableViewCell.m */,
+				2FD13CD51ADB1D5A002E3C54 /* RideDetailViewController.h */,
+				2FD13CD61ADB1D5A002E3C54 /* RideDetailViewController.m */,
 			);
 			path = CodeForACause;
 			sourceTree = "<group>";
@@ -235,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD13CB01ADAEFA5002E3C54 /* Main.storyboard in Resources */,
+				2FD13CD11ADB031B002E3C54 /* RideCellNib.xib in Resources */,
 				2FD13CB51ADAEFA5002E3C54 /* LaunchScreen.xib in Resources */,
 				2FD13CB21ADAEFA5002E3C54 /* Images.xcassets in Resources */,
 			);
@@ -305,7 +319,9 @@
 				2FD13CAD1ADAEFA5002E3C54 /* DetailViewController.m in Sources */,
 				2FD13CAA1ADAEFA5002E3C54 /* MasterViewController.m in Sources */,
 				2FD13CA71ADAEFA5002E3C54 /* CodeForACause.xcdatamodeld in Sources */,
+				2FD13CD41ADB03BB002E3C54 /* RideTableViewCell.m in Sources */,
 				2FD13CA41ADAEFA5002E3C54 /* AppDelegate.m in Sources */,
+				2FD13CD71ADB1D5A002E3C54 /* RideDetailViewController.m in Sources */,
 				2FD13CA11ADAEFA5002E3C54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
