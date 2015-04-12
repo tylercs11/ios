@@ -16,6 +16,7 @@
 		2FD13CB21ADAEFA5002E3C54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD13CB11ADAEFA5002E3C54 /* Images.xcassets */; };
 		2FD13CB51ADAEFA5002E3C54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD13CB31ADAEFA5002E3C54 /* LaunchScreen.xib */; };
 		2FD13CC11ADAEFA5002E3C54 /* CodeForACauseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD13CC01ADAEFA5002E3C54 /* CodeForACauseTests.m */; };
+		9D488F1CEB968FD98FDA4D16 /* Pods_CodeForACause.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0992CFD40DBB88636BFED6D /* Pods_CodeForACause.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A9A173487CBDF1BC4299C51 /* Pods-CodeForACause.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeForACause.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeForACause/Pods-CodeForACause.debug.xcconfig"; sourceTree = "<group>"; };
 		2FD13C9B1ADAEFA5002E3C54 /* CodeForACause.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeForACause.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD13C9F1ADAEFA5002E3C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD13CA01ADAEFA5002E3C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		2FD13CBA1ADAEFA5002E3C54 /* CodeForACauseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeForACauseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD13CBF1ADAEFA5002E3C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD13CC01ADAEFA5002E3C54 /* CodeForACauseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeForACauseTests.m; sourceTree = "<group>"; };
+		A0992CFD40DBB88636BFED6D /* Pods_CodeForACause.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeForACause.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC881E27A34E3F6F62A07CCA /* Pods-CodeForACause.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeForACause.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeForACause/Pods-CodeForACause.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D488F1CEB968FD98FDA4D16 /* Pods_CodeForACause.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,8 @@
 				2FD13C9D1ADAEFA5002E3C54 /* CodeForACause */,
 				2FD13CBD1ADAEFA5002E3C54 /* CodeForACauseTests */,
 				2FD13C9C1ADAEFA5002E3C54 /* Products */,
+				939DD8145A27228F710ED407 /* Pods */,
+				9AEE088B0D65923625A3D050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		939DD8145A27228F710ED407 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A9A173487CBDF1BC4299C51 /* Pods-CodeForACause.debug.xcconfig */,
+				CC881E27A34E3F6F62A07CCA /* Pods-CodeForACause.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AEE088B0D65923625A3D050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0992CFD40DBB88636BFED6D /* Pods_CodeForACause.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FD13CC41ADAEFA5002E3C54 /* Build configuration list for PBXNativeTarget "CodeForACause" */;
 			buildPhases = (
+				07777E84B12A80153E248401 /* Check Pods Manifest.lock */,
 				2FD13C971ADAEFA5002E3C54 /* Sources */,
 				2FD13C981ADAEFA5002E3C54 /* Frameworks */,
 				2FD13C991ADAEFA5002E3C54 /* Resources */,
+				B4C689424BFCD7D998DD4360 /* Embed Pods Frameworks */,
+				FFD6456523A963C829089A77 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +248,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07777E84B12A80153E248401 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4C689424BFCD7D998DD4360 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeForACause/Pods-CodeForACause-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD6456523A963C829089A77 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeForACause/Pods-CodeForACause-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FD13C971ADAEFA5002E3C54 /* Sources */ = {
@@ -353,6 +428,7 @@
 		};
 		2FD13CC51ADAEFA5002E3C54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9A173487CBDF1BC4299C51 /* Pods-CodeForACause.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodeForACause/Info.plist;
@@ -363,6 +439,7 @@
 		};
 		2FD13CC61ADAEFA5002E3C54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC881E27A34E3F6F62A07CCA /* Pods-CodeForACause.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodeForACause/Info.plist;
@@ -424,6 +501,7 @@
 				2FD13CC61ADAEFA5002E3C54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FD13CC71ADAEFA5002E3C54 /* Build configuration list for PBXNativeTarget "CodeForACauseTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +510,7 @@
 				2FD13CC91ADAEFA5002E3C54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
